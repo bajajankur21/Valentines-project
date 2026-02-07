@@ -1,31 +1,36 @@
 // --- CONFIGURATION ---
 const questions = [
     {
-        question: "What was the one thing I brought which was dirty",
-        options: ["Food", "Bike ride", "The dirty helmet", "My clothes"],
-        correct: 2 
-    },
-    {
-        question: "What is my favorite food?",
-        options: ["Pizza", "Sushi", "Burgers", "Tacos"],
-        correct: 0
-    },
-    {
-        question: "Where was this photo taken?",
-        image: "us.jpg", 
-        options: ["Paris", "London", "New York", "Our Backyard"],
-        correct: 3
-    },
-    {
-        question: "What is our anniversary date?",
-        options: ["Jan 1st", "Feb 14th", "Dec 25th", "July 4th"],
-        correct: 1
-    },
-    {
-        question: "Who said 'I love you' first?",
-        options: ["Me", "You", "We said it together", "Neither yet"],
-        correct: 0
-    }
+    question: "What was the one thing that did not happen on our first date?",
+    options: [
+      "I cooked for you",
+      "We watched a movie",
+      "We watched TMKOC",
+      "We kissed",
+    ],
+    correct: 3, // Make sure this index matches the correct answer! (0 is first, 1 is second...)
+  },
+  {
+    question: "What is my favorite food cooked by you?",
+    options: ["Chole bhature", "Mutton gravy", "Lahori Paneer", "Poha"],
+    correct: 0,
+  },
+  {
+    question: "Where was this photo taken?",
+    image: "./us.jpeg",
+    options: ["The Culiniriam", "Earl's Kitchen", "The palm", "Society"],
+    correct: 0,
+  },
+  {
+    question: "What is our anniversary date?",
+    options: ["Nov 5th", "Oct 10th", "Nov 9th", "Oct 5th"],
+    correct: 3,
+  },
+  {
+    question: "Who said 'I love you' first?",
+    options: ["Me", "You", "We said it together", "Neither yet"],
+    correct: 0,
+  },
 ];
 
 // --- LOGIC ---
@@ -139,3 +144,4 @@ function closeError() {
     overlay.classList.add('hidden');
     clearTimeout(errorTimeout);
 }
+
