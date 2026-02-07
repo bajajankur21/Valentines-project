@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Quiz For My Valentine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div id="start-screen">
+            <h1>Hey love! ❤️</h1>
+            <p>I made a little game for you. Let's see how well you know us!</p>
+            <button onclick="startQuiz()">Start Quiz</button>
+        </div>
+
+        <div id="quiz-container" class="hidden">
+            <h2 id="question-text">Question goes here</h2>
+            
+            <div id="image-container"></div>
+
+            <div id="options-container">
+                </div>
+        </div>
+
+        <div id="proposal-container" class="hidden">
+            <h1>Will you be my Valentine? 🌹</h1>
+            <div class="buttons">
+                <button id="yes-btn" onclick="acceptProposal()">YES!</button>
+                <button id="no-btn" onclick="rejectProposal()">No</button>
+            </div>
+        </div>
+
+        <div id="success-container" class="hidden">
+            <h1>Thank you for making my day! 💖</h1>
+            <div class="heart-animation">❤️</div>
+        </div>
+    </div>
+
+    <div id="heart-overlay" class="hidden">
+        <div class="big-heart">❤️</div>
+    </div>
+
+    <div id="error-overlay" class="hidden" onclick="closeError()">
+        <div class="error-box">
+            <h1 id="error-message">Message</h1>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
